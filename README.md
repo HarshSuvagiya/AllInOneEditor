@@ -2,7 +2,7 @@
 
 An editor for audios and videos.
 
-Some feature for audio editor are listed over here:
+## Some feature for audio editor are listed over here:
 <ul>
 <li> Amplify Audio </li>
 <li> Audio Compress </li>
@@ -15,8 +15,9 @@ Some feature for audio editor are listed over here:
 <li> Reverse Audio </li>
 <li> Slow Audio </li>
 <li> Trim Audio </li>
+</ul>
 
-Some feature for video editor are listed over here:
+## Some feature for video editor are listed over here:
 <ul>
 <li> Video To Mp3 </li>
 <li> Video To Images </li>
@@ -33,6 +34,7 @@ Some feature for video editor are listed over here:
 <li> Slow Video </li>
 <li> Fast Video </li>
 <li> Extract Frames from video </li>
+</ul>
 
 ## Social Media
 
