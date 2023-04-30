@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbar">
+
+        <ImageView
+            android:id="@+id/ivBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Trim Audio"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/txtMusicDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/donefile" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <AbsoluteLayout
+            android:id="@+id/waveformParent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.1"
+            android:background="#000">
+
+            <ImageView
+                android:id="@+id/bkgnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.scorpion.allinoneeditor.audioeditor.ViewClasses.WaveformView
+                android:id="@+id/waveform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.scorpion.allinoneeditor.audioeditor.ViewClasses.MarkerView
+                android:id="@+id/startmarker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="Start marker"
+                android:nextFocusDown="@+id/endmarker"
+                android:paddingLeft="40dp"
+                android:src="@drawable/start_cutter" />
+
+            <com.scorpion.allinoneeditor.audioeditor.ViewClasses.MarkerView
+                android:id="@+id/endmarker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="end marker"
+                android:nextFocusUp="@+id/startmarker"
+                android:src="@drawable/end_cutter" />
+
+        </AbsoluteLayout>
+
+        <LinearLayout
+            android:id="@+id/llButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.4"
+            android:background="@color/topbar"
+            android:orientation="horizontal"
+            android:weightSum="1.5">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:id="@+id/starttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="Start"
+                    android:paddingLeft="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:id="@+id/rew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/prev" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:src="@drawable/play" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:id="@+id/ffwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/next" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:id="@+id/endtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="End"
+                    android:paddingLeft="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5">
+            <!--            <com.facebook.ads.NativeAdLayout-->
+            <!--                android:id="@+id/native_ad_container"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_margin="3dp"-->
+            <!--                android:orientation="vertical" />-->
+            <FrameLayout
+                android:id="@+id/id_native_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

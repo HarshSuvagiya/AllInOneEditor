@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/mainLayout"
+    android:paddingTop="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+       >
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25px"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ico"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toBottomOf="@+id/image_preview"
+            app:layout_constraintLeft_toLeftOf="@+id/image_preview"
+            app:layout_constraintRight_toRightOf="@+id/image_preview"
+            app:layout_constraintTop_toTopOf="@+id/image_preview" />
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="video.mp4"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/duration"
+            app:layout_constraintLeft_toRightOf="@+id/image_preview"
+            app:layout_constraintRight_toLeftOf="@+id/next_button"
+            app:layout_constraintTop_toTopOf="@+id/image_preview" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="duration"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_preview"
+            app:layout_constraintLeft_toLeftOf="@+id/file_name"
+            app:layout_constraintTop_toBottomOf="@+id/file_name" />
+
+        <ImageView
+            android:id="@+id/next_button"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginRight="30px"
+            android:tint="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

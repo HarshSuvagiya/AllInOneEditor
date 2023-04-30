@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".videoeditor.activity.VideoEditorMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Video Editor"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/myCreation"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/videosplit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SplitVideo"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                android:src="@drawable/splitfile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+            <ImageView
+                android:id="@+id/videoConverter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                android:src="@drawable/vidconverter"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/slowVideo"
+                app:layout_constraintTop_toBottomOf="@id/videosplit"
+                />
+
+            <ImageView
+                android:id="@+id/slowVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vidslow"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@id/videoConverter"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videosplit"
+                />
+
+            <ImageView
+                android:id="@+id/fastVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidfast"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/slowVideo"
+                app:layout_constraintTop_toBottomOf="@id/videoConverter" />
+
+            <ImageView
+                android:id="@+id/videoCompress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidcompress"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toRightOf="@id/fastVideo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/slowVideo" />
+
+            <ImageView
+                android:id="@+id/rotateVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidrotate"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/videoCompress"
+                app:layout_constraintTop_toBottomOf="@id/fastVideo" />
+
+            <ImageView
+                android:id="@+id/muteVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidmute"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toRightOf="@id/rotateVideo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videoCompress" />
+
+            <ImageView
+                android:id="@+id/mirrorVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                android:src="@drawable/vidmirror"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/muteVideo"
+                app:layout_constraintTop_toBottomOf="@id/rotateVideo" />
+
+            <ImageView
+                android:id="@+id/videoToMp3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidmp3"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toRightOf="@id/mirrorVideo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/muteVideo" />
+
+            <ImageView
+                android:id="@+id/videoReverse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidreverse"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/muteVideo"
+                app:layout_constraintTop_toBottomOf="@id/mirrorVideo" />
+
+            <ImageView
+                android:id="@+id/videoTrim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/vidtrim"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toRightOf="@id/videoReverse"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videoToMp3" />
+
+            <ImageView
+                android:id="@+id/videoFade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+              android:src="@drawable/vidfade"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/videoTrim"
+                app:layout_constraintTop_toBottomOf="@id/videoReverse" />
+
+            <ImageView
+                android:id="@+id/videoToGif"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vidgif"
+                app:layout_constraintLeft_toRightOf="@id/videoFade"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videoTrim" />
+
+            <ImageView
+                android:id="@+id/videoToimage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+              android:src="@drawable/videotoimages"
+                app:layout_constraintLeft_toRightOf="@id/videomerge"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videoToGif" />
+
+
+            <ImageView
+                android:id="@+id/videomerge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+              android:src="@drawable/mergevideo"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/videoToGif"
+                app:layout_constraintTop_toBottomOf="@id/videoFade"
+                />
+
+            <ImageView
+                android:id="@+id/videoFlip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vidflip"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/videoToimage"
+                app:layout_constraintTop_toBottomOf="@id/videomerge" />
+
+            <ImageView
+                android:id="@+id/videoAudioMix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:src="@drawable/videoaudio"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/videoFlip"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                app:layout_constraintTop_toBottomOf="@id/videoToimage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/myCreation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mycreation"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/adView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/banner_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:visibility="visible"></LinearLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

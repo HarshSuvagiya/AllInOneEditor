@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.scorpion.allinoneeditor">
+
+    <uses-sdk tools:overrideLibrary="com.arthenica.mobileffmpeg" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4938515760572795~5279267672" />
+
+
+        <activity
+            android:name=".videoeditor.activity.My_Work"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ExitActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".videoeditor.activity.VideoFlipActivity"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoEditorMainActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.GifPlayer"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.AudioPlayer"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoViewActivity"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".videoeditor.activity.My_Work" -->
+        <!-- android:parentActivityName=".videoeditor.activity.MainActivity" /> -->
+        <activity
+            android:name=".videoeditor.activity.VideoAudioMix"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoFade"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoReverse"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoMirror"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.FastVideo"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SlowVideo"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoRotate"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SelectAudioActivity"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoToGif"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoToMp3"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.MuteVideo"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoConverter"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.TrimmerActivity"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoCompress"
+            android:exported="true"
+            android:parentActivityName=".videoeditor.activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SelectVideoActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SplitVideo"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SplitVideoList"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.VideoToImages"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.DisplayImage"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.SingleImageActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoeditor.activity.MergeVideoActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".videoeditor.activity.BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+
+        <!--Audio Editor-->
+        <activity
+            android:name=".audioeditor.Activity.AudioEditorMainActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.AudioConverter"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.SelectAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.AudioCompress"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.outputAudioPlayer"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.FastAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.SlowAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.TrimAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.ReverseAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.AmplifierAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.MixAudios"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.MergeAudios"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.My_Workaudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".audioeditor.Activity.AudioCoverPhoto"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".audioeditor.Activity.MutePartAudio"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications_black_24dp" />
+
+        <service
+            android:name=".MyFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

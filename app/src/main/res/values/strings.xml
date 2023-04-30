@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Audio Video Lab</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_right_drawer">Right Drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moreapp">Scorpion Infosoft</string>
+
+    <string name="fb_banner_id">2238432322969956_2238435706302951</string>
+    <string name="fb_native_id">2238432322969956_2238434879636367</string>
+    <string name="fb_inter_id">2238432322969956_2238435459636309</string>
+
+    <string name="ad_attribution">Ad</string>
+
+    <!--    TEST ID-->
+    <string name="inter_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="waiting_text">Please wait...</string>
+    <string name="compress">compress</string>
+    <string name="fast">Fast</string>
+    <string name="mute">Mute</string>
+    <string name="slow">Slow</string>
+    <string name="trim">Trim</string>
+    <string name="audio_video">VideoAudioMix</string>
+    <string name="converter">Converter</string>
+    <string name="fade">Fade</string>
+    <string name="mirror">Mirror</string>
+    <string name="reverse">Reverse</string>
+    <string name="rotate">Rotate</string>
+    <string name="gif">GIF</string>
+    <string name="mpthree">MP3</string>
+    <string name="flip">Flip</string>
+    <string name="splitvideo">splitvideo</string>
+    <string name="videotoimages">videotoimages</string>
+    <string name="merge">merge</string>
+    <string name="temp">mergetemp</string>
+
+
+
+
+    <string name="compressaudio">compressaudio</string>
+    <string name="convertaudio">convertaudio</string>
+    <string name="fastaudio">fastaudio</string>
+    <string name="slowaudio">slowaudio</string>
+    <string name="trimaudio">trimaudio</string>
+    <string name="reverseaudio">reverseaudio</string>
+    <string name="amplifieraudio">amplifieraudio</string>
+    <string name="mixaudio">mixaudio</string>
+    <string name="mergeaudio">mergeaudio</string>
+    <string name="audiocoverphoto">audiocoverphoto</string>
+    <string name="mutepart">mutepart</string>
+
+
+
+    <string name="start_marker">Start marker</string>
+    <string name="end_marker">End marker</string>
+
+    <string name="delete_tmp_error">Error deleting temporary file</string>
+    <string name="no_extension_error">Sorry, RingtoneMaker can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
+    <string name="bad_extension_error">Sorry, RingtoneMaker is not yet able to edit files of type</string>
+    <string name="read_error">Error reading file</string>
+
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="alert_title_success">Success</string>
+    <string name="no_unique_filename">Unable to find unique filename</string>
+    <string name="progress_dialog_saving">Please Wait…</string>
+    <string name="too_small_error">Can\'t save a file that small, try making it longer.</string>
+    <string name="artist_name">RingtoneMaker</string>
+    <string name="write_error">Error writing file</string>
+    <string name="no_space_error">Your SD card is full, there is not enough space to save this file.</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/videoEditor"
+            android:icon="@drawable/videoicon"
+            android:title="Video Editor" />
+        <item
+            android:id="@+id/audioEditor"
+            android:icon="@drawable/audioicon"
+            android:title="Audio Editor" />
+        <item
+            android:id="@+id/videotomp3"
+            android:icon="@drawable/videotomp3"
+            android:title="Video to MP3" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/privacyPolicy"
+                android:icon="@drawable/privacyicon"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/more"
+                android:icon="@drawable/moreicon"
+                android:title="More App" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/sharefile"
+                android:title="Share App" />
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rateicon"
+                android:title="Rate App" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7776D6</color>
+    <color name="colorPrimaryDark">#6261AA</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="shadow_color">#FF000000</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="green">#28BF07</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="topbar">#7776D6</color>
+    <color name="seekbg">#BAB9E9</color>
+    <color name="waveform_selected">#7776D6</color>
+    <color name="waveform_unselected">#7776D6</color>
+    <color name="waveform_unselected_bkgnd_overlay">#5d5d5d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#1e2b43</color>
+    <color name="grid_line">#1e2b43</color>
+    <color name="timecode">#1e2b43</color>
+    <color name="timecode_shadow">#1e2b43</color>
+    <color name="blue_active">#03a9f4</color>
+
+</resources>

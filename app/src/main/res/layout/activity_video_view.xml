@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/topbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Video Player"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.5"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/VideoViewRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill">
+
+                    <VideoView
+                        android:id="@+id/vvScreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp" />
+
+                    <LinearLayout
+                        android:id="@+id/seek_bar_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/seekbar_bg"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/r222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ivBtnPreview2"
+                                android:layout_width="75px"
+                                android:layout_height="75px"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="25px"
+                                android:src="@drawable/play" />
+
+                            <TextView
+                                android:id="@+id/tvSeekLeft"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="45px"
+                                android:layout_toRightOf="@+id/ivBtnPreview2"
+                                android:text="00:00"
+                                android:textColor="#ffffff"
+                                android:textSize="13dp" />
+
+                            <SeekBar
+                                android:id="@+id/seekVideo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:thumbTint="#fff"
+                                android:minHeight="2dp"
+                                android:maxHeight="2dp"
+                                android:progressDrawable="@drawable/seekbarr"
+                                android:layout_toLeftOf="@+id/tvSeekRight"
+                                android:layout_toRightOf="@+id/tvSeekLeft"
+                                android:paddingLeft="25px"
+                                android:paddingRight="28px"
+                                android:thumbOffset="5dp" />
+
+                            <TextView
+                                android:id="@+id/tvSeekRight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="13px"
+                                android:text="--"
+                                android:textColor="#ffffff"
+                                android:textSize="13dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/banner_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="visible"></LinearLayout>-->
+        <FrameLayout
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

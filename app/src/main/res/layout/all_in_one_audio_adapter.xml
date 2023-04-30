@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapterlinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_vertical|center_horizontal|center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/musicicon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/videoname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Unknown"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/videostype"
+                app:layout_constraintLeft_toRightOf="@+id/icon"
+                app:layout_constraintRight_toRightOf="@+id/videosize"
+                app:layout_constraintTop_toTopOf="@+id/icon" />
+
+            <TextView
+                android:id="@+id/videostype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Unknown"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
+                app:layout_constraintLeft_toLeftOf="@+id/videoname"
+                app:layout_constraintRight_toLeftOf="@+id/videosize"
+                app:layout_constraintTop_toBottomOf="@+id/videoname" />
+
+            <TextView
+                android:id="@+id/videosize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:singleLine="true"
+                android:text="time"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/videostype"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/videostype" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
