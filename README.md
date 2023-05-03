@@ -2,6 +2,10 @@
 
 An editor for audios and videos.
 
+## Screenshot
+<img src="Editor.jpg">
+
+
 ## Some feature for audio editor are listed over here:
 <ul>
 <li> Amplify Audio </li>
